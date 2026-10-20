@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brandon Gil — Web Portfolio</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --purple: #bc8cff;
+    --orange: #f0883e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.5px; }
+  header p { color: var(--muted); font-size: 18px; margin-top: 8px; max-width: 640px; }
+  section { padding: 48px 0; }
+  h2 { font-size: 22px; font-weight: 600; margin-bottom: 24px; color: var(--fg); }
+  h2 .tag { font-size: 13px; font-weight: 500; padding: 3px 10px; border-radius: 20px; margin-left: 10px; vertical-align: middle; }
+  .tag-client { background: rgba(63,185,80,0.15); color: var(--green); }
+  .tag-demo { background: rgba(240,136,62,0.15); color: var(--orange); }
+  .tag-product { background: rgba(188,140,255,0.15); color: var(--purple); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    text-decoration: none;
+    color: var(--fg);
+    transition: border-color .15s, transform .15s;
+    display: block;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+  .card .desc { color: var(--muted); font-size: 14px; }
+  .card .url { font-size: 12px; color: var(--accent); margin-top: 12px; font-family: ui-monospace, monospace; word-break: break-all; }
+  .card .badge {
+    display: inline-block; font-size: 11px; font-weight: 500;
+    padding: 2px 8px; border-radius: 12px; margin-bottom: 10px;
+  }
+  .badge-live { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge-demo { background: rgba(240,136,62,0.15); color: var(--orange); }
+  footer { border-top: 1px solid var(--border); padding: 32px 0 48px; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--accent); text-decoration: none; }
+  @media (max-width: 640px) {
+    header h1 { font-size: 30px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Brandon Gil</h1>
+    <p>Growth marketer &amp; brand owner. Web design, development, and marketing for local businesses and consumer brands across South Florida and beyond.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Client Work <span class="tag tag-client">LIVE</span></h2>
+    <div class="grid">
+      <a class="card" href="https://grandpajackai.github.io/las-olas-yacht-management/">
+        <span class="badge badge-live">Live</span>
+        <h3>Las Olas Yacht Management</h3>
+        <p class="desc">Fort Lauderdale yacht care and management services.</p>
+        <p class="url">las-olas-yacht-management</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/axel-landscaping/">
+        <span class="badge badge-live">Live</span>
+        <h3>Axel Landscaping</h3>
+        <p class="desc">Kansas City landscaping &amp; outdoor living.</p>
+        <p class="url">axel-landscaping</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/stuart-dansby/">
+        <span class="badge badge-live">Live</span>
+        <h3>Stuart Dansby</h3>
+        <p class="desc">"Taking the Fight" — personal brand site.</p>
+        <p class="url">stuart-dansby</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/madan-wash-detail/">
+        <span class="badge badge-live">Live</span>
+        <h3>Madan Wash &amp; Detail</h3>
+        <p class="desc">Mobile car detailing in Miami Lakes.</p>
+        <p class="url">madan-wash-detail</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/las-olas-client-portal/">
+        <span class="badge badge-live">Live</span>
+        <h3>Las Olas — Client Portal</h3>
+        <p class="desc">Yacht management client portal preview.</p>
+        <p class="url">las-olas-client-portal</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Concept &amp; Demo Sites <span class="tag tag-demo">PORTFOLIO</span></h2>
+    <div class="grid">
+      <a class="card" href="https://grandpajackai.github.io/junk_guy_site/">
+        <span class="badge badge-demo">Demo</span>
+        <h3>Junk Guy</h3>
+        <p class="desc">Junk removal service website concept.</p>
+        <p class="url">junk_guy_site</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/asylum_site/">
+        <span class="badge badge-demo">Demo</span>
+        <h3>Asylum</h3>
+        <p class="desc">Brand website concept.</p>
+        <p class="url">asylum_site</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/sticker_man_site/">
+        <span class="badge badge-demo">Demo</span>
+        <h3>Sticker Man</h3>
+        <p class="desc">Sticker &amp; decal business concept.</p>
+        <p class="url">sticker_man_site</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/supafresh-site/">
+        <span class="badge badge-demo">Demo</span>
+        <h3>Supafresh</h3>
+        <p class="desc">Fresh food brand website concept.</p>
+        <p class="url">supafresh-site</p>
+      </a>
+      <a class="card" href="https://grandpajackai.github.io/m7-studios-site/">
+        <span class="badge badge-demo">Demo</span>
+        <h3>M7 Studios</h3>
+        <p class="desc">Media &amp; production studio concept.</p>
+        <p class="url">m7-studios-site</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Own Products <span class="tag tag-product">BUILT BY ME</span></h2>
+    <div class="grid">
+      <a class="card" href="https://www.gil.marketing/">
+        <span class="badge badge-live">Live</span>
+        <h3>Gil.Marketing</h3>
+        <p class="desc">Growth marketing agency — my primary business.</p>
+        <p class="url">gil.marketing</p>
+      </a>
+      <a class="card" href="https://skillmaxx.gilventures.ai/">
+        <span class="badge badge-live">Live</span>
+        <h3>SkillMaxx</h3>
+        <p class="desc">AI skills marketplace — 423+ skills across 5 agent platforms.</p>
+        <p class="url">skillmaxx.gilventures.ai</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Contact: <a href="mailto:grandpajackai@gmail.com">grandpajackai@gmail.com</a> · <a href="https://github.com/grandpajackai">github.com/grandpajackai</a>
+  </div>
+</footer>
+</body>
+</html>
